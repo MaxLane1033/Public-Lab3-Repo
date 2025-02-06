@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa; /* Light background */
+        }
+        header {
+            background-color: #6f42c1; /* Purple background */
+            padding: 10px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        .navigation a {
+            text-decoration: none;
+            color: white;
+            padding: 0 15px;
+            transition: color 0.3s;
+        }
+        .navigation a:hover {
+            color: #ffd700; /* Gold color for hover effects */
+        }
+        .hobbies {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .card {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            background-color: white; /* Card background */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            border-radius: 0.25rem; /* Rounded corners */
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid #ffd700; /* Gold border for images */
+        }
+        footer {
+            background-color: #343a40; /* Dark background for footer */
+            text-align: center;
+            padding: 10px;
+            color: white;
+            width: 100%;
+        }
+        footer a {
+            color: #ffd700; /* Gold links in footer */
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="projects.html">Projects</a>
+        </div>
+        <img src="../resources/owl.jpg" alt="Icon" style="width: 24px; height: 24px;">
+    </header>
+
+    <div class="container mt-4">
+        <div class="hobbies">
+            <div class="card">
+                <img src="../resources/lift.jpg" alt="Working out">
+                <h3>Working out</h3>
+                <p>I love lifting weights because it makes me feel healthy!</p>
+            </div>
+            <div class="card">
+                <img src="../resources/run.jpg" alt="Running">
+                <h3>Running</h3>
+                <p>Running is my favorite. It makes me feel free and gives me an excuse to go outside!</p>
+            </div>
+            <div class="card">
+                <img src="../resources/talk.jpg" alt="Hanging With Friends">
+                <h3>Hanging With Friends</h3>
+                <p>Seeing my friends is always a highlight for me. Sharing memories with people you love is the best!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/maxwell-j-lane/">LinkedIn</a>
+    </footer>
+</body>
+</html>
